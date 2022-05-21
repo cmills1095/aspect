@@ -11,7 +11,7 @@ file. Let's take the SolCx benchmark as an example (see Section {ref}`sec:benchm
 The directory contains:
 
  - `solcx.cc` -- the code file containing a material model
-   ``SolCxMaterial'' and a postprocessor ``SolCxPostprocessor'',
+   "SolCxMaterial" and a postprocessor "SolCxPostprocessor",
 
  - `solcx.prm` -- the parameter file referencing these plugins,
 
@@ -23,26 +23,26 @@ steps discussed in {ref}`sec:write-plugin`. For the current case, this
 amounts to the following:
 
  1. Move into the directory of that particular benchmark:
-```{code-block} console
- $ cd benchmarks/solcx
-```
+    ```{code-block} console
+    $ cd benchmarks/solcx
+    ```
 
  2. Set up the project:
-```{code-block} console
- $ cmake .
-```
- By default, `cmake` will look for the ASPECT binary and other
- information in a number of directories relative to the current one.
- If it is unable to pick up where ASPECT was built and installed, you can
- specify this directory explicitly this using `-D
+    ```{code-block} console
+    $ cmake .
+    ```
+    By default, `cmake` will look for the ASPECT binary and other
+    information in a number of directories relative to the current one.
+    If it is unable to pick up where ASPECT was built and installed, you can
+    specify this directory explicitly this using `-D
    Aspect\_DIR=$<$...$>$` as an additional flag to `cmake`, where
- `$<$...$>$` is the path to the build directory.
+   `$<$...$>$` is the path to the build directory.
 
  3. Build the library:
-```{code-block} console
- $ make
-```
- This will generate the file `libsolcx.so`.
+    ```{code-block} console
+    $ make
+    ```
+    This will generate the file `libsolcx.so`.
 
 Finally, you can run ASPECT with `solcx.prm`:
 ```{code-block} console
