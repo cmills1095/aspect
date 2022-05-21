@@ -34,6 +34,7 @@ mathematical model is solved correctly, while *validation* intends to ensure tha
 much of the aim of computational geodynamics is to validate the models that we have.
 
 :::{toctree}
+benchmark-run.md
 benchmarks/onset-of-convection/doc/onset-of-convection.md
 cookbooks/van-keken/doc/van-keken.md
 cookbooks/van-keken-vof/doc/van-keken-vof.md
